@@ -1,0 +1,15 @@
+console.group("group 1");
+console.log("Messege One");
+console.log("Messege two");
+console.group("Child Group");
+console.log("Messege One");
+console.log("Messege two");
+console.group("Grand Child Group");
+console.log("Messege One");
+console.log("Messege two");
+console.groupEnd();
+console.groupEnd();
+console.groupEnd();
+console.group("group 2");
+console.log("Messege One");
+console.log("Messege two");
