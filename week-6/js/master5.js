@@ -1,6 +1,20 @@
-let arr1 = ["A", "C", "X"];
-let arr2 = ["D", "E", "F", "Y"];
-let allArrs = arr1.concat(arr2);
-allArrs = allArrs[5].concat(allArrs[2], allArrs[6]).toLowerCase();
+let needle = "JS";
+let haystack = ["PHP", "JS", "Python"];
 
-console.log(allArrs); // fxy
+if (typeof haystack.indexOf(needle) == "number") {
+  console.log("Found");
+} else {
+  console.log("Not found");
+}
+
+if (typeof haystack.lastIndexOf(needle) == "number") {
+  console.log("Found");
+} else {
+  console.log("Not found");
+}
+
+if (haystack.includes(needle) == true) {
+  console.log("Found");
+} else {
+  console.log("Not found");
+}

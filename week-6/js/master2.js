@@ -1,7 +1,5 @@
-let arrOne = ["C", "D", "X"];
-let arrTwo = ["A", "B", "Z"];
-let finalArr = arrTwo.concat(arrOne);
+let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
+friends.shift();
+friends.pop();
 
-finalArr.sort().reverse();
-
-console.log(finalArr); // ["Z", "X", "D", "C", "B", "A"]
+console.log(friends); // ["Eman", "Osama"]

@@ -1,5 +1,9 @@
-let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
-friends.shift();
-friends.pop();
+let myFriends = ["Ahmed", "Elham", "Osama", "Gamal"];
+let num = 3;
 
-console.log(friends); // ["Eman", "Osama"]
+// Method 1
+console.log(myFriends.slice(false, num)); // ["Ahmed", "Elham", "Osama"];
+
+// Method 2
+myFriends.pop();
+console.log(myFriends); // ["Ahmed", "Elham", "Osama"];

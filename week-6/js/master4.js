@@ -1,20 +1,4 @@
-let needle = "JS";
-let haystack = ["PHP", "JS", "Python"];
+let website = "Go";
+let words = [`${website}ogle`, "Facebook", ["Elzero", "Web", "School"]];
 
-if (typeof haystack.indexOf(needle) == "number") {
-  console.log("Found");
-} else {
-  console.log("Not found");
-}
-
-if (typeof haystack.lastIndexOf(needle) == "number") {
-  console.log("Found");
-} else {
-  console.log("Not found");
-}
-
-if (haystack.includes(needle) == true) {
-  console.log("Found");
-} else {
-  console.log("Not found");
-}
+console.log(words[2][0].slice(2).toUpperCase()); // ZERO

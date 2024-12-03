@@ -1,4 +1,7 @@
-let website = "Go";
-let words = [`${website}ogle`, "Facebook", ["Elzero", "Web", "School"]];
+let arrOne = ["C", "D", "X"];
+let arrTwo = ["A", "B", "Z"];
+let finalArr = [];
 
-console.log(words[2][0].slice(2).toUpperCase()); // ZERO
+finalArr = [...arrTwo, ...arrOne].sort().reverse();
+
+console.log(finalArr); // ["Z", "X", "D", "C", "B", "A"]
