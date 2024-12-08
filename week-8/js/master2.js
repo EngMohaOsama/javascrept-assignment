@@ -1,17 +1,15 @@
 function calculate(firstNum, secondNum, operation) {
-  if (secondNum === undefined) {
+  let result = 1;
+  if (!secondNum || !firstNum) {
     console.log(`Second Number Not Found`);
   } else if (operation === "add" || operation === undefined) {
     result = firstNum + secondNum;
-    console.log(`${result}`);
   } else if (operation === "subtract") {
     result = firstNum - secondNum;
-    console.log(`${result}`);
   } else if (operation === "multiply") {
     result = firstNum * secondNum;
-    console.log(`${result}`);
-    console.log;
   }
+  console.log(result);
 }
 
 // Needed Output
