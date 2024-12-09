@@ -1,14 +1,14 @@
 function specialMix(...data) {
-  let sum = 0;
+    let sum = 0;
 
-  for (let item of data) {
-    let num = parseInt(item);
-    if (!isNaN(num)) sum += num;
-  }
+    for (let item of data) {
+        let num = parseInt(item);
+        if (!isNaN(num)) sum += num;
+    }
 
-  if (sum == 0) return "All Is Strings";
+    if (sum == 0) return "All Is Strings";
 
-  return sum;
+    return sum;
 }
 
 console.log(specialMix(10, 20, 30)); // 60
